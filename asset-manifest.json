@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/bongalo-app/static/css/main.eb993a5c.css",
-    "main.js": "/bongalo-app/static/js/main.b39eff73.js",
+    "main.css": "/bongalo-app/static/css/main.20a42f2d.css",
+    "main.js": "/bongalo-app/static/js/main.614b0bb6.js",
     "static/js/787.a72b9f71.chunk.js": "/bongalo-app/static/js/787.a72b9f71.chunk.js",
     "static/media/hero-bg.svg": "/bongalo-app/static/media/hero-bg.0c9d1561bdbfc1139bc64e613813dc2c.svg",
     "static/media/yaounde.svg": "/bongalo-app/static/media/yaounde.9a380a558f96f9fa6f853771d89e45b6.svg",
@@ -46,6 +46,7 @@
     "static/media/visa.svg": "/bongalo-app/static/media/visa.edd4fa0ee3b67cdad6dd2c7f36d7168d.svg",
     "static/media/places-shower.svg": "/bongalo-app/static/media/places-shower.3be039803e3a449a39d635990d9f1dba.svg",
     "static/media/twitter.svg": "/bongalo-app/static/media/twitter.a919cbc24d6ae34b9b89808a695bf580.svg",
+    "static/media/hamburger.svg": "/bongalo-app/static/media/hamburger.6e7b23432f91581efc5406009e7cd88e.svg",
     "static/media/instagram.svg": "/bongalo-app/static/media/instagram.cbda017dd5465184a58af0182706d743.svg",
     "static/media/location.svg": "/bongalo-app/static/media/location.bf4e449f9191c5181f0af761f63fc35b.svg",
     "static/media/experience-location.svg": "/bongalo-app/static/media/experience-location.c21a8017989f5bd0594dbd082089afdc.svg",
@@ -62,12 +63,12 @@
     "static/media/facebook.svg": "/bongalo-app/static/media/facebook.3f855a8dd1aef73cfe3cf852b6268d86.svg",
     "static/media/arrow-down3.svg": "/bongalo-app/static/media/arrow-down3.08f11957f43c2ebe6714bacb4e4d9e83.svg",
     "static/media/arrow-down2.svg": "/bongalo-app/static/media/arrow-down2.7398ca2f3a435e25a1cec83079131bc2.svg",
-    "main.eb993a5c.css.map": "/bongalo-app/static/css/main.eb993a5c.css.map",
-    "main.b39eff73.js.map": "/bongalo-app/static/js/main.b39eff73.js.map",
+    "main.20a42f2d.css.map": "/bongalo-app/static/css/main.20a42f2d.css.map",
+    "main.614b0bb6.js.map": "/bongalo-app/static/js/main.614b0bb6.js.map",
     "787.a72b9f71.chunk.js.map": "/bongalo-app/static/js/787.a72b9f71.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.eb993a5c.css",
-    "static/js/main.b39eff73.js"
+    "static/css/main.20a42f2d.css",
+    "static/js/main.614b0bb6.js"
   ]
 }
