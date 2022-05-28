@@ -13,6 +13,7 @@ import mastercard from '../../assets/mastercard.svg'
 import visa from '../../assets/visa.svg'
 
 
+
 const Footer = () => {
 
 
@@ -86,8 +87,8 @@ const Footer = () => {
           </div>
           <div className={styles["payment"]}>
             <h3>payment methods</h3>
-            <img src={mastercard} alt="mastercard" />
-            <img src={visa} alt="visa" />
+            <img className={styles["master-img"]} src={mastercard} alt="mastercard" />
+            <img className={styles["visa-img"]} src={visa} alt="visa" />
           </div>
         </div>
       </div>

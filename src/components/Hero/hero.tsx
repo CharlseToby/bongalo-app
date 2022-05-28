@@ -10,6 +10,7 @@ import arrowdownSearch from '../../assets/arrow-down_search.svg'
 import location from '../../assets/location.svg'
 import departure from '../../assets/departure.svg'
 import guest from '../../assets/guest.svg'
+import hamburger from '../../assets/hamburger.svg'
 
 const Hero = () => {
   return (
@@ -20,6 +21,7 @@ const Hero = () => {
       <div className={styles["hero-content"]}>
         <div className={styles["hero-content-nav"]}>
           <div className={styles["logo"]}>
+            <img className={styles["hamburger-img"]} src={hamburger} alt="hamburger-menu" />
             <img src={logo} alt="logo" />
             <h2>Bongalo</h2>
           </div>

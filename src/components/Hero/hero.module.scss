@@ -34,6 +34,10 @@ $mediumScreen: 1300px;
         display: flex;
         gap: 24px;
         align-items: center;
+
+        .hamburger-img {
+          display: none;
+        }
         // img{
 
         // }
@@ -215,6 +219,9 @@ $mediumScreen: 1300px;
   
         .logo {
           gap: 24px;
+          .hamburger-img{
+            display: inline-block;
+          }
           img{
             width: 39px;
             height: 39px;
