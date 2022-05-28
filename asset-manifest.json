@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/bongalo-app/static/css/main.20a42f2d.css",
+    "main.css": "/bongalo-app/static/css/main.96bb5f03.css",
     "main.js": "/bongalo-app/static/js/main.614b0bb6.js",
     "static/js/787.a72b9f71.chunk.js": "/bongalo-app/static/js/787.a72b9f71.chunk.js",
     "static/media/hero-bg.svg": "/bongalo-app/static/media/hero-bg.0c9d1561bdbfc1139bc64e613813dc2c.svg",
@@ -63,12 +63,12 @@
     "static/media/facebook.svg": "/bongalo-app/static/media/facebook.3f855a8dd1aef73cfe3cf852b6268d86.svg",
     "static/media/arrow-down3.svg": "/bongalo-app/static/media/arrow-down3.08f11957f43c2ebe6714bacb4e4d9e83.svg",
     "static/media/arrow-down2.svg": "/bongalo-app/static/media/arrow-down2.7398ca2f3a435e25a1cec83079131bc2.svg",
-    "main.20a42f2d.css.map": "/bongalo-app/static/css/main.20a42f2d.css.map",
+    "main.96bb5f03.css.map": "/bongalo-app/static/css/main.96bb5f03.css.map",
     "main.614b0bb6.js.map": "/bongalo-app/static/js/main.614b0bb6.js.map",
     "787.a72b9f71.chunk.js.map": "/bongalo-app/static/js/787.a72b9f71.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.20a42f2d.css",
+    "static/css/main.96bb5f03.css",
     "static/js/main.614b0bb6.js"
   ]
 }
