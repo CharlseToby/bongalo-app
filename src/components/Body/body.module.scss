@@ -1,0 +1,493 @@
+$smallScreen: 800px;
+$mediumScreen: 1300px;
+
+
+.body{
+  text-align: left;
+  .body_featuredCities{
+    margin: 20px auto 50px;
+    max-width: 1300px;
+    color: #ffffff;
+    text-align: left;
+    h1{
+      font-size: 40px;
+      margin-bottom: 40px;
+      line-height: 46px;
+      text-transform: capitalize;
+      color: #000000;
+    }
+    h2{
+      text-transform: capitalize;
+      font-weight: 400;
+      margin-bottom: 5px;
+      margin-top: 0;
+    }
+    p{
+      text-transform: capitalize;
+      margin-top: 8px;
+    }
+    .cities{
+      // margin-bottom: 30px;
+      margin: 0 auto 30px;
+      width: 100%;
+      gap: 10px;
+      display: flex;
+      // flex-wrap: wrap;
+      // display: grid;
+      // grid-template-columns: 1fr 1fr;
+      text-align: center;
+      justify-content: space-between;
+      // width: 100vw;
+
+      .city{
+        position: relative;
+        display: flex;
+        height: 348px;
+        width: 640px;
+        overflow: hidden;
+        // grid-template-columns: 1fr 1fr;
+        // flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background: radial-gradient(50% 50% at 50% 50%, rgba(18, 23, 30, 0.654531) 0%, rgba(62, 148, 254, 0.22) 100%);
+        img{
+          position: absolute;
+          right: 0;
+          width: 100%;
+          top: 0;
+          z-index: -1;
+        }
+        div{
+          h2{
+            font-size: 60px;
+            line-height: 69px;
+          }
+          p{
+            font-size: 20px;
+            line-height: 23px;
+          }
+        }
+      }
+    }
+    .otherCities{
+      // display: grid;
+      // grid-template-columns: 1fr 1fr 1fr;
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      .cityOthers{
+        position: relative;
+        border-radius: 5px;
+        display: flex;
+        height: 347px;
+        width: 421px;
+        overflow: hidden;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background: radial-gradient(50% 50% at 50% 50%, rgba(18, 23, 30, 0.654531) 0%, rgba(62, 148, 254, 0.22) 100%);
+        
+        img {
+          position: absolute;
+          right: 0;
+          top: 0;
+          width: 100%;
+          z-index: -1;
+        }
+        div {
+          h2 {
+            font-size: 60px;
+            line-height: 69px;
+          }
+          font-size: 27.0716px;
+          line-height: 31px;
+        }
+      }
+    }
+  }
+  .body_featuredPlaces{
+    margin: 10px auto 50px;
+    max-width: 1300px;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+    h1{
+      font-size: 40px;
+      margin-bottom: 40px;
+      line-height: 46px;
+      text-transform: capitalize;
+    }
+    .places{
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      overflow: hidden;
+      .place-details{
+        display: flex;
+        justify-content: space-between;
+        color: #000000;
+        .place-details_left{
+          h2{
+            font-size: 20px;
+            line-height: 23px; 
+          }
+          h3{
+            font-size: 15px;
+            line-height: 17px;
+            span{
+              color: rgba(18, 23, 30, 0.654531);
+            }
+          }
+        }
+        .place-details_right{
+          padding-top: 7px;
+          p{
+            font-size: 15px;
+            line-height: 17px;
+            color: rgba(18, 23, 30, 0.654531);
+            text-transform: capitalize;
+            margin-bottom: 0;
+          }
+          div{
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            p{
+              display: flex;
+              align-items: center;
+              gap: 10px;
+              text-align: start;
+            }
+          }
+        }
+      }
+    }
+    .places-arrowLeft{
+      position: absolute;
+      top: 200px;
+      left: 40px;
+      display: none;
+    }
+    .places-arrowRight{
+      position: absolute;
+      top: 200px;
+      right: -30px;
+    }
+  }
+  .body_amazingExperience{
+    margin: 10px auto 50px;
+    max-width: 1300px;
+    position: relative;
+    overflow: hidden;
+    h1{
+      font-size: 40px;
+      margin-bottom: 40px;
+      line-height: 46px;
+      text-transform: capitalize;
+    }
+    .experiences{
+      display: flex;
+      gap: 10px;
+      justify-content: space-between;
+      .experience{
+        .experience_details{
+          h2{
+            font-size: 20px;
+            line-height: 23px;
+            text-transform: capitalize;
+          }
+          p{
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            text-transform: capitalize;
+            font-size: 15px;
+            line-height: 17px;
+            color: rgba(18, 23, 30, 0.654531);
+          }
+        }
+      }
+    }
+    .experiences-arrowLeft{
+      position: absolute;
+      top: 200px;
+      left: 40px;
+      display: none;
+    }
+    .experiences-arrowRight{
+      position: absolute;
+      top: 200px;
+      right: -30px;
+      // display: none;
+    }
+  }
+  .body_summary{
+    color: #ffffff;
+    padding: 0 70px;
+    margin: 20px auto;
+    max-width: 1300px;
+    background: #3E94FE;
+    box-shadow: 0px 30px 60px rgba(62, 148, 254, 0.2);
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-height: 399px;
+    padding: 51px 67px;
+    div{
+      // text-align: left;
+      h2{
+        font-size: 30px;
+        line-height: 34px;
+        text-transform: capitalize;
+        font-weight: 400;
+      }
+      p{
+        width: 226px;
+        font-size: 17px;
+        line-height: 22px;
+        // font-weight: 400;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $smallScreen) {
+  .body {
+    text-align: left;
+
+    .body_featuredCities {
+      margin: 10px auto;
+      max-width: 92%;
+
+      h1 {
+        font-size: 35px;
+        line-height: 40px;
+      }
+
+      h2 {
+        margin-bottom: 5px;
+        margin-top: 0;
+      }
+
+      p {
+        margin-top: 8px;
+      }
+
+      .cities {
+        margin: 0 auto 10px;
+        width: 100%;
+        gap: 7px;
+
+        .city {
+          height: 133.7px;
+          width: 242px;
+          overflow: hidden;
+          text-align: center;
+          background: radial-gradient(50% 50% at 50% 50%, rgba(18, 23, 30, 0.654531) 0%, rgba(62, 148, 254, 0.22) 100%);
+
+          img {
+            position: absolute;
+            right: 0;
+            width: 100%;
+            top: 0;
+            z-index: -1;
+          }
+
+          div {
+            h2 {
+              font-size: 23.0592px;
+              line-height: 26px;
+            }
+
+            p {
+              font-size: 7.6864px;
+              line-height: 9px;
+            }
+          }
+        }
+      }
+
+      .otherCities {
+        // display: grid;
+        // grid-template-columns: 1fr 1fr 1fr;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        gap: 4px;
+
+        .cityOthers {
+          position: relative;
+          border-radius: 5px;
+          display: flex;
+          height: 133.3px;
+          width: 160px;
+          overflow: hidden;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          background: radial-gradient(50% 50% at 50% 50%, rgba(18, 23, 30, 0.654531) 0%, rgba(62, 148, 254, 0.22) 100%);
+
+          img {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 100%;
+            z-index: -1;
+          }
+
+          div {
+            h2 {
+              font-size: 23.0592px;
+              line-height: 26px;
+            }
+            p{
+              font-size: 7.6864px;
+              line-height: 9px;
+            }
+          }
+        }
+      }
+    }
+
+    .body_featuredPlaces {
+      margin: 10px auto;
+      padding-left: 23px;
+      max-width: 100%;
+      overflow: hidden;
+
+      h1 {
+        font-size: 35px;
+        line-height: 40px;
+      }
+
+      .places {
+        gap: 4px;
+        overflow: hidden;
+
+        .place-img{
+          width: 100% !important;
+          height: 100% !important;
+        }
+
+        .place-details {
+          .place-details_left {
+            h2 {
+              font-size: 12.0028px;
+              line-height: 14px;
+            }
+
+            h3 {
+              font-size: 9.00213px;
+              line-height: 10px;
+
+              span {
+                color: rgba(18, 23, 30, 0.654531);
+              }
+            }
+          }
+
+          .place-details_right {
+            padding-top: 7px;
+
+            p {
+              font-size: 9.00213px;
+              line-height: 10px;
+              margin-bottom: 0;
+            }
+
+            div {
+              gap: 12px;
+
+              p {
+                gap: 5px;
+                margin-top: 0;
+              }
+            }
+          }
+        }
+      }
+
+      .places-arrowLeft {
+        display: none;
+      }
+
+      .places-arrowRight {
+        position: absolute;
+        top: 140px;
+        right: 13px;
+        img{
+          width: 41.4px;
+        }
+      }
+    }
+
+    .body_amazingExperience {
+      margin: 10px auto;
+      padding-left: 23px;
+      max-width: 100%;
+
+      h1 {
+        font-size: 35px;
+        line-height: 40px;
+      }
+
+      .experiences {
+        gap: 5px;
+
+        .experience {
+          .experience-img{
+            width: 100%;
+          }
+          .experience_details {
+            h2 {
+              font-size: 11.8975px;
+              line-height: 14px;
+              margin-bottom: 5px;
+            }
+
+            p {
+              gap: 3px;
+              font-size: 8.9231px;
+              line-height: 10px;
+              margin-top: 3px;
+            }
+          }
+        }
+      }
+
+      .experiences-arrowLeft {
+        display: none;
+        top: 140px;
+        left: 13px;
+        
+        img {
+          width: 41.4px;
+        }
+      }
+
+      .experiences-arrowRight {
+        position: absolute;
+        top: 140px;
+        right: 13px;
+      
+        img {
+          width: 41.4px;
+        }
+      }
+    }
+
+    .body_summary {
+      margin: 0 auto;
+      justify-content: center;
+      row-gap: 80px;
+      padding: 51px 67px;
+
+      div {
+        padding: 5px 0;
+        text-align: center;
+      }
+    }
+  }
+}
