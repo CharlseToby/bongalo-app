@@ -9,17 +9,18 @@ import client from '../../assets/client.svg'
 import support from '../../assets/support.svg'
 import Card from '../Card/card';
 import useWindowDimensions from '../../hooks/useWindowsDimensions'
+import Carousel from '../carousel/Carousel'
 
+export interface dimensions {
+  smallCardWidth: string;
+  smallCardHeight: string;
+  mediumCardWidth: string;
+  mediumCardHeight: string;
+  lardgeCardWidth: string;
+  largeCardHeight: string;
+}
 const Body = () =>{
   const { width: windowWidth = 1443} = useWindowDimensions();
-  interface dimensions {
-    smallCardWidth: string;
-    smallCardHeight: string;
-    mediumCardWidth: string;
-    mediumCardHeight: string;
-    lardgeCardWidth: string;
-    largeCardHeight: string;
-  }
 
   let cardSize: dimensions = {
     smallCardWidth: "301.9px",
@@ -139,7 +140,7 @@ const Body = () =>{
       <div className={styles["body_featuredPlaces"]}>
         <h1>featured places</h1>
         <div className={styles["places"]}>
-          {placesCards}
+          <Carousel type={placesArray} cardSize={cardSize} name="places"/>
         </div>
         <div className={styles["places-arrowLeft"]}>
           <img src={arrowRight} alt="arrowRight" />
@@ -151,7 +152,7 @@ const Body = () =>{
       <div className={styles["body_amazingExperience"]}>
         <h1>some amazing experiences</h1>
         <div className={styles["experiences"]}>
-          {experienceCards}
+          <Carousel type={experienceArray} cardSize={cardSize} name="experiences"/>
         </div>
         <div className={styles["experiences-arrowLeft"]}>
           <img src={arrowRight} alt="arrowRight" />

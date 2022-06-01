@@ -1,0 +1,66 @@
+.place-details {
+  display: flex;
+  justify-content: space-between;
+  color: #000000;
+
+  .place-details_left {
+    h2 {
+      font-size: 20px;
+      line-height: 23px;
+    }
+
+    h3 {
+      font-size: 15px;
+      line-height: 17px;
+
+      span {
+        color: rgba(18, 23, 30, 0.654531);
+      }
+    }
+  }
+
+  .place-details_right {
+    padding-top: 7px;
+
+    p {
+      font-size: 15px;
+      line-height: 17px;
+      color: rgba(18, 23, 30, 0.654531);
+      text-transform: capitalize;
+      margin-bottom: 0;
+    }
+
+    div {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+
+      p {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-align: start;
+      }
+    }
+  }
+}
+
+.experience {
+  .experience_details {
+    h2 {
+      font-size: 20px;
+      line-height: 23px;
+      text-transform: capitalize;
+    }
+
+    p {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      text-transform: capitalize;
+      font-size: 15px;
+      line-height: 17px;
+      color: rgba(18, 23, 30, 0.654531);
+    }
+  }
+}

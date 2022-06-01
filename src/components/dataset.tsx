@@ -81,6 +81,78 @@ export let placesArray = [
     price: 120, 
     id: 4
   },
+  {
+    name: "room",
+    image: places3,
+    label: "SCI Shalismi",
+    bedCount: 3,
+    showerCount: 7,
+    price: 120, 
+    id: 5
+  },
+  {
+    name: "room",
+    image: places1,
+    label: "SCI Shalismi",
+    bedCount: 3,
+    showerCount: 7,
+    price: 120, 
+    id: 6
+  },
+  {
+    name: "room",
+    image: places4,
+    label: "SCI Shalismi",
+    bedCount: 3,
+    showerCount: 7,
+    price: 120, 
+    id: 7
+  },
+  {
+    name: "room",
+    image: places2,
+    label: "SCI Shalismi",
+    bedCount: 3,
+    showerCount: 7,
+    price: 120, 
+    id: 8
+  },
+  {
+    name: "room",
+    image: places4,
+    label: "SCI Shalismi",
+    bedCount: 3,
+    showerCount: 7,
+    price: 120, 
+    id: 9
+  },
+  {
+    name: "room",
+    image: places3,
+    label: "SCI Shalismi",
+    bedCount: 3,
+    showerCount: 7,
+    price: 120, 
+    id: 10
+  },
+  {
+    name: "room",
+    image: places1,
+    label: "SCI Shalismi",
+    bedCount: 3,
+    showerCount: 7,
+    price: 120, 
+    id: 11
+  },
+  {
+    name: "room",
+    image: places2,
+    label: "SCI Shalismi",
+    bedCount: 3,
+    showerCount: 7,
+    price: 120, 
+    id: 12
+  },
 ]
 
 
@@ -107,6 +179,42 @@ export let experienceArray = [
     name: "nirvana heights",
     label: "gisozi, kigali",
     id: 4,
+    image: experience4
+  },
+  {
+    name: "mountain view",
+    label: "gisozi, kigali",
+    id: 5,
+    image: experience2
+  },
+  {
+    name: "anastasia paradise",
+    label: "gisozi, kigali",
+    id: 6,
+    image: experience3
+  },
+  {
+    name: "nirvana heights",
+    label: "gisozi, kigali",
+    id: 7,
+    image: experience1
+  },
+  {
+    name: "mountain view",
+    label: "gisozi, kigali",
+    id: 8,
+    image: experience2
+  },
+  {
+    name: "anastasia paradise",
+    label: "gisozi, kigali",
+    id: 9,
+    image: experience3
+  },
+  {
+    name: "nirvana heights",
+    label: "gisozi, kigali",
+    id: 10,
     image: experience4
   },
 ]
