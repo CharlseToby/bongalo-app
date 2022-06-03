@@ -7,10 +7,10 @@ import experienceLocate from '../../assets/experience-location.svg'
 export const PlaceItem = (props:any) => {
 
   const {name, image, label, bedCount, showerCount, price, id } = props.place;
-  const cardSize = props.cardSize;
+  const {cardSize, stopSlide, startSlide} = props;
 
     return(
-      <div className={styles["place"]} key={id}>
+      <div className={styles["place"]} key={id} onMouseEnter={stopSlide} onMouseOut={startSlide}>
         <Card height={cardSize?.smallCardHeight} width={cardSize?.smallCardWidth} bdRadius='5px'>
           <img className={styles["place-img"]} src={image} alt={label} />
         </Card>
@@ -35,10 +35,10 @@ export const PlaceItem = (props:any) => {
 export const ExperienceItem = (props:any) => {
 
   const { name, label, id, image} = props.experience;
-  const cardSize = props.cardSize;
+  const {cardSize, stopSlide, startSlide} = props;
 
     return (
-      <div className={styles["experience"]} key={id}>
+      <div className={styles["experience"]} key={id} onMouseEnter={stopSlide} onMouseOut={startSlide}>
         <Card height={cardSize?.smallCardHeight} width={cardSize?.smallCardWidth} bdRadius='5px'>
           <img className={styles["experience-img"]} src={image} alt="experience" />
         </Card>

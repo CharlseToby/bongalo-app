@@ -31,7 +31,34 @@ const Body = () =>{
     largeCardHeight: "348px",
   };
 
-  if (windowWidth <= 800) {
+  if (windowWidth <= 800 && windowWidth > 600) {
+    cardSize = {
+      smallCardWidth: "180px",
+      smallCardHeight: "153.6px",
+      mediumCardWidth: "190px",
+      mediumCardHeight: "160.3px",
+      lardgeCardWidth: "290px",
+      largeCardHeight: "160.7px",
+    };
+  } else if (windowWidth <= 1310 && windowWidth > 1000) {
+    cardSize = {
+      smallCardWidth: "230px",
+    smallCardHeight: "200px",
+    mediumCardWidth: "320px",
+    mediumCardHeight: "260px",
+    lardgeCardWidth: "490px",
+    largeCardHeight: "270px",
+    };
+  } else if (windowWidth <= 1000 && windowWidth > 800) {
+    cardSize = {
+      smallCardWidth: "230px",
+    smallCardHeight: "200px",
+    mediumCardWidth: "265px",
+    mediumCardHeight: "220px",
+    lardgeCardWidth: "400px",
+    largeCardHeight: "221px",
+    };
+  } else if (windowWidth <= 600 && windowWidth > 500){
     cardSize = {
       smallCardWidth: "180px",
       smallCardHeight: "153.6px",
@@ -40,16 +67,18 @@ const Body = () =>{
       lardgeCardWidth: "244px",
       largeCardHeight: "133.7px",
     };
-  } else if (windowWidth <= 1100 && windowWidth > 800) {
+  } else if (windowWidth <= 500){
     cardSize = {
-      smallCardWidth: "178px",
-      smallCardHeight: "228px",
-      mediumCardWidth: "370px",
-      mediumCardHeight: "352px",
-      lardgeCardWidth: "790px",
-      largeCardHeight: "432px",
+      smallCardWidth: "180px",
+      smallCardHeight: "153.6px",
+      mediumCardWidth: "125px",
+      mediumCardHeight: "102px",
+      lardgeCardWidth: "190px",
+      largeCardHeight: "104px",
     };
   }
+
+
   let citiesTopCards = citiesArray.slice(0,2).map((city:any) => {
     const {cityName, propertyCount, image} = city;
 
@@ -142,24 +171,24 @@ const Body = () =>{
         <div className={styles["places"]}>
           <Carousel type={placesArray} cardSize={cardSize} name="places"/>
         </div>
-        <div className={styles["places-arrowLeft"]}>
+        {/* <div className={styles["places-arrowLeft"]}>
           <img src={arrowRight} alt="arrowRight" />
         </div>
         <div className={styles["places-arrowRight"]}>
           <img src={arrowRight} alt="arrowRight" />
-        </div>
+        </div> */}
       </div>
       <div className={styles["body_amazingExperience"]}>
         <h1>some amazing experiences</h1>
         <div className={styles["experiences"]}>
           <Carousel type={experienceArray} cardSize={cardSize} name="experiences"/>
         </div>
-        <div className={styles["experiences-arrowLeft"]}>
+        {/* <div className={styles["experiences-arrowLeft"]}>
           <img src={arrowRight} alt="arrowRight" />
         </div>
         <div className={styles["experiences-arrowRight"]}>
           <img src={arrowRight} alt="arrowRight" />
-        </div>
+        </div> */}
       </div>
       <div className={styles["body_summary"]}>
         <div>

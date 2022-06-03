@@ -1,5 +1,9 @@
 $smallScreen: 800px;
-$mediumScreen: 1300px;
+$largeScreen: 1310px;
+$mediumScreen: 1000px;
+$mobile: 600px;
+$miniMobile: 500px;
+
 
 
 .body{
@@ -260,7 +264,7 @@ $mediumScreen: 1300px;
 
     .body_featuredCities {
       margin: 10px auto;
-      max-width: 92%;
+      max-width: 600px;
 
       h1 {
         font-size: 35px;
@@ -282,8 +286,8 @@ $mediumScreen: 1300px;
         gap: 7px;
 
         .city {
-          height: 133.7px;
-          width: 242px;
+          height: 159px;
+          width: 290px;
           overflow: hidden;
           text-align: center;
           background: radial-gradient(50% 50% at 50% 50%, rgba(18, 23, 30, 0.654531) 0%, rgba(62, 148, 254, 0.22) 100%);
@@ -322,8 +326,8 @@ $mediumScreen: 1300px;
           position: relative;
           border-radius: 5px;
           display: flex;
-          height: 133.3px;
-          width: 160px;
+          height: 156.3px;
+          width: 190px;
           overflow: hidden;
           align-items: center;
           justify-content: center;
@@ -354,8 +358,8 @@ $mediumScreen: 1300px;
 
     .body_featuredPlaces {
       margin: 10px auto;
-      padding-left: 23px;
-      max-width: 100%;
+      // padding-left: 23px;
+      max-width: 600px;
       overflow: hidden;
 
       h1 {
@@ -426,8 +430,8 @@ $mediumScreen: 1300px;
 
     .body_amazingExperience {
       margin: 10px auto;
-      padding-left: 23px;
-      max-width: 100%;
+      // padding-left: 23px;
+      max-width: 600px;
 
       h1 {
         font-size: 35px;
@@ -482,6 +486,7 @@ $mediumScreen: 1300px;
     .body_summary {
       margin: 0 auto;
       justify-content: center;
+      column-gap: 20px;
       row-gap: 80px;
       padding: 51px 67px;
 
@@ -491,4 +496,139 @@ $mediumScreen: 1300px;
       }
     }
   }
+  @media screen and (max-width: $mobile){
+    .body_featuredCities {
+      max-width: 500px !important;
+      margin: 0 auto;
+    
+      .cities {
+        margin: 0 auto 18px !important;
+        gap: 4px !important;
+    
+        .city {
+          height: 133px !important;
+          width: 244px !important;
+        }
+      }
+    
+      .cityOthers {
+        height: 133px !important;
+        width: 160px !important;
+      }
+    
+    }
+    
+    .body_amazingExperience {
+      max-width: 500px !important;
+      margin-bottom: 30px;
+    }
+    
+    .body_featuredPlaces {
+      max-width: 500px !important;
+      margin-bottom: 10px;
+    }
+  }
+  @media screen and (max-width: $miniMobile) {
+    .body_featuredCities {
+      max-width: 400px !important;
+      margin: 0 auto;
+
+      .cities {
+        margin: 0 auto 10px !important;
+        gap: 2px !important;
+    
+        .city {
+          height: 104px !important;
+          width: 190px !important;
+        }
+      }
+    
+      .cityOthers {
+        height: 102px !important;
+        width: 125px !important;
+      }
+    
+    }
+    
+    .body_amazingExperience {
+      max-width: 400px !important;
+      margin-bottom: 30px;
+    }
+    
+    .body_featuredPlaces {
+      max-width: 400px !important;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: $largeScreen) and (min-width: $mediumScreen){
+  .body{
+    .body_featuredCities {
+      max-width: $mediumScreen;
+      margin: 0 auto;
+      
+      .cities{
+        margin: 0 auto 23px !important;
+        .city {
+          height: 265px!important;
+          width: 490px!important;
+        }
+      }
+    
+      .cityOthers {
+        height: 260px!important;
+        width: 320px!important;
+      }
+
+    }
+
+    .body_amazingExperience{
+      max-width: $mediumScreen !important;
+      margin-bottom: 30px;
+    }
+
+    .body_featuredPlaces{
+      max-width: $mediumScreen !important;
+      margin-bottom: 10px;
+    }
+  }
+
+
+}
+
+@media screen and (max-width: $mediumScreen) and (min-width: $smallScreen) {
+  .body {
+    .body_featuredCities {
+      max-width: 830px;
+      margin: 0 auto;
+
+      .cities {
+        margin: 0 auto 23px !important;
+
+        .city {
+          height: 220px !important;
+          width: 400px !important;
+        }
+      }
+
+      .cityOthers {
+        height: 218px !important;
+        width: 265px !important;
+      }
+
+    }
+
+    .body_amazingExperience {
+      max-width: 830px !important;
+      margin-bottom: 30px;
+    }
+
+    .body_featuredPlaces {
+      max-width: 830px !important;
+      margin-bottom: 10px;
+    }
+  }
+
+
 }

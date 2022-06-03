@@ -4,7 +4,7 @@ import { ExperienceItem, PlaceItem } from './item'
 
 const Slide = (props:any) => {
 
-  const {cardSize, name, section} = props;
+  const {cardSize, name, section, stopSlide, startSlide} = props;
   
   
 
@@ -12,11 +12,11 @@ const Slide = (props:any) => {
     <>
       {(name === "places")? (
         <div className={styles["places"]}>
-          {section?.map((place:any) => <PlaceItem place={place} key={place.key} cardSize={cardSize}/>)} 
+          {section?.map((place:any) => <PlaceItem place={place} key={place.id} cardSize={cardSize} stopSlide={stopSlide} startSlide={startSlide}/>)} 
         </div>) : 
       (name === "experiences")? (
         <div className={styles["experiences"]}>
-          {section?.map((experience:any) => <ExperienceItem experience={experience} key={experience.key} cardSize={cardSize}/> )}         
+          {section?.map((experience:any) => <ExperienceItem experience={experience} key={experience.id} cardSize={cardSize}/> )}         
         </div>
       ): null}
     </>

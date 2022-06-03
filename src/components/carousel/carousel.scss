@@ -1,3 +1,70 @@
-.carousel-container{
-  transition: ease 1s;
+$smallScreen: 800px;
+$mediumScreen: 1000px;
+$largeScreen: 1310px;
+
+.carousel{
+  position: relative;
+  height: 360px;
+  max-width: 1300px;
+  margin: 0 auto;
+
+  .carousel-container{
+    transition: ease 1s;
+    width: fit-content;
+  
+  }
+}
+.arrowLeft{
+  position: absolute;
+  left: -25px;
+  top: 100px;
+  z-index: 1;
+}
+.arrowRight{
+  position: absolute;
+  right: -24px;
+  top: 100px;
+  z-index: 1;
+}
+
+@media screen and (max-width: $largeScreen) and (min-width: $mediumScreen) {
+  .carousel{
+    height: 310px;
+    max-width: 1000px;
+  }
+  .arrowLeft, .arrowRight{
+    top: 60px;
+  }
+}
+
+@media screen and (max-width: $mediumScreen) and (min-width: $smallScreen) {
+  .carousel {
+    height: 290px;
+    max-width: 830px;
+  }
+  .arrowLeft,
+  .arrowRight {
+    top: 60px;
+  }
+}
+
+@media screen and (max-width: $smallScreen) {
+  .carousel{
+    height: 210px;
+    max-width: 600px;
+  }
+  .arrowLeft,
+  .arrowRight {
+    top: 60px;
+  
+    img {
+      width: 41.4px;
+    }
+  }
+  .arrowLeft{
+    left: -15px;
+  }
+  .arrowRight{
+    right: -8px;
+  }
 }
