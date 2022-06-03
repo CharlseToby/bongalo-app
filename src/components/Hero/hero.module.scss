@@ -1,5 +1,6 @@
 $smallScreen: 800px;
-$mediumScreen: 1300px;
+$mediumScreen: 1000px;
+$miniMobile: 500px;
 
 .hero{
   position: relative;
@@ -8,7 +9,7 @@ $mediumScreen: 1300px;
   color: #FFFFFF;
   overflow: hidden;
   // height: 889px;
-  min-height: 1139px;
+  min-height: 1239px;
   .hero-bg{
     position: absolute;
     z-index: -1;
@@ -37,6 +38,7 @@ $mediumScreen: 1300px;
 
         .hamburger-img {
           display: none;
+          cursor: pointer;
         }
         // img{
 
@@ -46,6 +48,7 @@ $mediumScreen: 1300px;
           font-size: 36px;
           line-height: 41px;
           color: #FFFFFF;
+          cursor: pointer;
         }
       }
       .nav{
@@ -66,6 +69,7 @@ $mediumScreen: 1300px;
             font-size: 24px;
             line-height: 27px;
             color: #FFFFFF;
+            cursor: pointer;
           }
         }
         .btn-login{
@@ -78,6 +82,7 @@ $mediumScreen: 1300px;
           color: #3E94FE;
           outline: none;
           border: none;
+          cursor: pointer;
         }
       }
     }
@@ -102,15 +107,18 @@ $mediumScreen: 1300px;
         position: absolute;
         top: 220px;
         right: 75px;
+        cursor: pointer;
       }
       .hero-arrow-left{
         position: absolute;
         top: 220px;
         left: 75px;
+        cursor: pointer;
       }
       .hero-arrow{
         position: relative;
         left: 40px;
+        cursor: pointer;
         .hero-arrow-down1{
           position: absolute;
           top: 50px;
@@ -134,23 +142,31 @@ $mediumScreen: 1300px;
       background: #FFFFFF;
       box-shadow: 0px 50px 100px rgba(62, 148, 254, 0.15);
       border-radius: 5px;
-      max-width: 1302px;
-      min-height: 227px;
+      width: 93%;
+      min-height: 327px;
       display: flex;
+      gap: 1px;
+      column-gap: 50px;
+      
       flex-wrap: wrap;
       margin: 0 auto;
-      padding: 0 58px;
-      justify-content: space-between;
+      padding: 0 40px 0;
+      justify-content: space-around;
       align-items: center;
 
       .search-item{
         text-align: left;
+        padding-top: 20px;
+        max-width: 249px;
+        padding-bottom: 40px;
+        // max-height: 200px;
         color: rgba(18, 23, 30, 0.654531);
         position: relative;
         p{
           color: #000000;
           font-size: 25px;
           line-height: 29px;
+          margin: 18px 0;
         }
         .departure{
           padding: 10px 0;
@@ -164,8 +180,9 @@ $mediumScreen: 1300px;
         }
         .search-item-arrow{
           position: absolute;
-          bottom: 5px;
-          left: 247px;
+          bottom: 40px;
+          right: 2px;
+          cursor: pointer;
         }
 
 
@@ -181,7 +198,31 @@ $mediumScreen: 1300px;
         background: #3E94FE;
         border-radius: 10px;
         color: #FFFFFF;
+        cursor: pointer;
       }
+    }
+  }
+}
+
+@media screen and (max-width: $mediumScreen) and (min-width: $smallScreen) {
+  .hamburger-img{
+    display: inline-block !important;
+    width: 60px !important;
+    height: 60px !important;
+    cursor: pointer;
+    
+  }
+  .nav{
+    ul{
+      display: none !important;
+    }
+  }
+
+  .hero-content-text{
+
+    p{
+      font-size: 70px !important;
+      max-width: 800px !important;
     }
   }
 }
@@ -194,7 +235,7 @@ $mediumScreen: 1300px;
     color: #FFFFFF;
     // overflow: hidden;
     // height: 889px;
-    height: 1792px;
+    height: 1702px;
   
     .hero-bg {
       position: absolute;
@@ -323,9 +364,11 @@ $mediumScreen: 1300px;
   
         .search-item {
           text-align: left;
+          max-width: 100%;
           color: rgba(18, 23, 30, 0.654531);
           position: relative;
           width: 95%;
+          padding: 0;
 
           img{
             width: 52.3px;
@@ -357,7 +400,7 @@ $mediumScreen: 1300px;
             height: 33px;
             position: absolute;
             bottom: 5px;
-            left: 287px;
+            right: 0;
           }
   
   
@@ -365,6 +408,31 @@ $mediumScreen: 1300px;
   
         .btn-search {
           display: none;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: $miniMobile) {
+    .hero-content-text {
+      p {
+        font-size: 65px !important;
+      }
+    }
+  
+    .hero-content-search {
+      gap: 40px !important;
+      padding: 53px 40px 20px !important;
+  
+      .search-item {
+  
+        p {
+          font-size: 26px !important;
+          margin: 10px 0 !important;
+        }
+  
+        input {
+          font-size: 16px !important;
         }
       }
     }
