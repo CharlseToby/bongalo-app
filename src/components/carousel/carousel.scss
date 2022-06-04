@@ -9,7 +9,7 @@ $largeScreen: 1310px;
   margin: 0 auto;
 
   .carousel-container{
-    transition: ease 1s;
+    -webkit-transition: ease 1s;
     width: fit-content;
   
   }

@@ -9,9 +9,11 @@ function Carousel(props:any) {
   const { width: windowWidth = 1443} = useWindowDimensions();
   let slideCount = 4;
 
-  if (windowWidth <= 1000) {
+  if (windowWidth <= 1000 && windowWidth > 600) {
     slideCount = 3;
-  } 
+  } else if (windowWidth <= 600) {
+    slideCount = 2;
+  }
 
   
   const {type, cardSize, name} = props;
