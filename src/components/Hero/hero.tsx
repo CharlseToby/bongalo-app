@@ -11,8 +11,15 @@ import location from '../../assets/location.svg'
 import departure from '../../assets/departure.svg'
 import guest from '../../assets/guest.svg'
 import hamburger from '../../assets/hamburger.svg'
+import { useState } from 'react'
 
 const Hero = () => {
+  const [showNav, setShowNav] = useState(false);
+
+  const navControl = () => {
+    setShowNav(showNav => !showNav);
+  }
+
   return (
     <div className={styles["hero"]}>
       <div className={styles["hero-bg"]}>
@@ -21,7 +28,7 @@ const Hero = () => {
       <div className={styles["hero-content"]}>
         <div className={styles["hero-content-nav"]}>
           <div className={styles["logo"]}>
-            <img className={styles["hamburger-img"]} src={hamburger} alt="hamburger-menu" />
+            <img className={styles["hamburger-img"]} src={hamburger} alt="hamburger-menu" onClick={navControl}/>
             <img src={logo} alt="logo" />
             <h2>Bongalo</h2>
           </div>
@@ -34,6 +41,12 @@ const Hero = () => {
             </ul>
             <button className={styles["btn-login"]}>Login</button>
           </div>
+        </div>
+        <div className={showNav? styles["nav-show"] : styles["nav-hide"]} >
+          <p>Home</p>
+          <p>List a property</p>
+          <p>Blog</p>
+          <p>FAQs</p>
         </div>
         <div className={styles["hero-content-text"]}>
           <img className={styles["hero-arrow-left"]} src={arrowleft} alt="arrow-left" />

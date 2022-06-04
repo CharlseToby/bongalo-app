@@ -26,6 +26,35 @@ $miniMobile: 500px;
     // overflow: hidden;
     background: linear-gradient(240.84deg, rgba(30, 40, 52, 0.7) 36.33%, rgba(18, 23, 30, 0.458172) 95.98%, rgba(255, 255, 255, 0.007) 96.01%);
     // padding: 40px 70px;
+
+
+    .hamburgerNav{
+      position: absolute;
+      top: 0;
+      left: 30px;
+      width: 85%;
+      z-index: 999;
+      border-radius: 8px;
+      height: 200px;
+      padding-top: 10px;
+      background-color: rgba(18, 23, 30, 0.9);
+      p{
+        cursor: pointer;
+        padding-bottom: 7px
+      }
+    }
+    .nav-hide {
+      display: none;
+      @extend .hamburgerNav;
+      transform: translateY(-200%);
+      transition: ease 2s;
+    }
+    .nav-show{
+      display: none;
+      @extend .hamburgerNav;
+      transform: translateY(53%);
+      transition: ease 1.5s;
+    }
     .hero-content-nav{
       display: flex;
       padding: 40px 70px;
@@ -201,6 +230,15 @@ $miniMobile: 500px;
         cursor: pointer;
       }
     }
+  }
+}
+
+@media screen and (max-width: $mediumScreen){
+  .nav-hide{
+    display: block !important;
+  }
+  .nav-show{
+    display: block !important;
   }
 }
 
