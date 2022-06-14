@@ -122,63 +122,7 @@ $miniMobile: 500px;
       margin-bottom: 40px;
       line-height: 46px;
       text-transform: capitalize;
-    }
-    .places{
-      display: flex;
-      justify-content: space-between;
-      gap: 10px;
-      overflow: hidden;
-      .place-details{
-        display: flex;
-        justify-content: space-between;
-        color: #000000;
-        .place-details_left{
-          h2{
-            font-size: 20px;
-            line-height: 23px; 
-          }
-          h3{
-            font-size: 15px;
-            line-height: 17px;
-            span{
-              color: rgba(18, 23, 30, 0.654531);
-            }
-          }
-        }
-        .place-details_right{
-          padding-top: 7px;
-          p{
-            font-size: 15px;
-            line-height: 17px;
-            color: rgba(18, 23, 30, 0.654531);
-            text-transform: capitalize;
-            margin-bottom: 0;
-          }
-          div{
-            display: flex;
-            gap: 20px;
-            align-items: center;
-            p{
-              display: flex;
-              align-items: center;
-              gap: 10px;
-              text-align: start;
-            }
-          }
-        }
-      }
-    }
-    .places-arrowLeft{
-      position: absolute;
-      top: 200px;
-      left: 40px;
-      display: none;
-    }
-    .places-arrowRight{
-      position: absolute;
-      top: 200px;
-      right: -30px;
-    }
+    } 
   }
   .body_amazingExperience{
     margin: 10px auto 50px;
@@ -190,41 +134,6 @@ $miniMobile: 500px;
       margin-bottom: 40px;
       line-height: 46px;
       text-transform: capitalize;
-    }
-    .experiences{
-      display: flex;
-      gap: 10px;
-      justify-content: space-between;
-      .experience{
-        .experience_details{
-          h2{
-            font-size: 20px;
-            line-height: 23px;
-            text-transform: capitalize;
-          }
-          p{
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            text-transform: capitalize;
-            font-size: 15px;
-            line-height: 17px;
-            color: rgba(18, 23, 30, 0.654531);
-          }
-        }
-      }
-    }
-    .experiences-arrowLeft{
-      position: absolute;
-      top: 200px;
-      left: 40px;
-      display: none;
-    }
-    .experiences-arrowRight{
-      position: absolute;
-      top: 200px;
-      right: -30px;
-      // display: none;
     }
   }
   .body_summary{
@@ -366,66 +275,6 @@ $miniMobile: 500px;
         font-size: 35px;
         line-height: 40px;
       }
-
-      .places {
-        gap: 4px;
-        overflow: hidden;
-
-        .place-img{
-          width: 100% !important;
-          height: 100% !important;
-        }
-
-        .place-details {
-          .place-details_left {
-            h2 {
-              font-size: 12.0028px;
-              line-height: 14px;
-            }
-
-            h3 {
-              font-size: 9.00213px;
-              line-height: 10px;
-
-              span {
-                color: rgba(18, 23, 30, 0.654531);
-              }
-            }
-          }
-
-          .place-details_right {
-            padding-top: 7px;
-
-            p {
-              font-size: 9.00213px;
-              line-height: 10px;
-              margin-bottom: 0;
-            }
-
-            div {
-              gap: 12px;
-
-              p {
-                gap: 5px;
-                margin-top: 0;
-              }
-            }
-          }
-        }
-      }
-
-      .places-arrowLeft {
-        display: none;
-      }
-
-      .places-arrowRight {
-        position: absolute;
-        top: 140px;
-        right: 13px;
-        img{
-          width: 41.4px;
-        }
-      }
     }
 
     .body_amazingExperience {
@@ -436,50 +285,6 @@ $miniMobile: 500px;
       h1 {
         font-size: 35px;
         line-height: 40px;
-      }
-
-      .experiences {
-        gap: 5px;
-
-        .experience {
-          .experience-img{
-            width: 100%;
-          }
-          .experience_details {
-            h2 {
-              font-size: 11.8975px;
-              line-height: 14px;
-              margin-bottom: 5px;
-            }
-
-            p {
-              gap: 3px;
-              font-size: 8.9231px;
-              line-height: 10px;
-              margin-top: 3px;
-            }
-          }
-        }
-      }
-
-      .experiences-arrowLeft {
-        display: none;
-        top: 140px;
-        left: 13px;
-        
-        img {
-          width: 41.4px;
-        }
-      }
-
-      .experiences-arrowRight {
-        position: absolute;
-        top: 140px;
-        right: 13px;
-      
-        img {
-          width: 41.4px;
-        }
       }
     }
 
